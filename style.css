@@ -249,7 +249,7 @@
       border: none;
       outline: none;
       background: #d1e5f3;
-      color: #0b0b0b;
+      color: #0f172a;
     }
 
     .contact-form input:focus,
@@ -281,3 +281,4 @@
         gap: 15px;
       }
     }
+

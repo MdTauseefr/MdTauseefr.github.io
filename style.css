@@ -1,0 +1,283 @@
+ /* =====================
+       GLOBAL STYLES
+    ====================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #38bdf8;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+
+    /* =====================
+       NAVBAR
+    ====================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #d1e5f3;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      position: relative;
+      font-weight: 500;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #38bdf8;
+      left: 0;
+      bottom: -6px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* =====================
+       HERO SECTION
+    ====================== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+
+    .hero-text span {
+      color: #38bdf8;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: 2px solid #0c0c0c;
+      background: transparent;
+      color: #101010;
+      font-weight: 500;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #080808;
+      color: #f7f8fa;
+      box-shadow: 0 0 20px #38bdf8;
+      transform: scale(1.05);
+    }
+
+    /* =====================
+       ABOUT
+    ====================== */
+    .about-content {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    img {
+      width: 400px;
+      margin: 50px;
+      border: 5px solid black;
+      padding: 10px;
+      border-radius: 30%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* =====================
+       SKILLS
+    ====================== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .skill-card {
+      background: #d1e5f3;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.4s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 20px 40px rgba(18, 24, 26, 0.3);
+    }
+
+    .skill-card h3 {
+      margin-top: 15px;
+    }
+
+    /* =====================
+       PROJECTS
+    ====================== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #d1e5f3;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(20, 46, 52, 0.3);
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    /* =====================
+       EXPERIENCE
+    ====================== */
+    .experience {
+      text-align: center;
+    }
+
+    .experience-box {
+      background: #d1e5f3;
+      padding: 30px;
+      border-radius: 20px;
+      display: inline-block;
+      transition: 0.4s;
+    }
+
+    .experience-box:hover {
+      box-shadow: 0 0 30px rgba(20, 46, 52, 0.3);
+      transform: scale(1.05);
+    }
+
+    /* =====================
+       CONTACT
+    ====================== */
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: #d1e5f3;
+      color: #fff;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      box-shadow: 0 0 10px #000a0e;
+    }
+
+    /* =====================
+       FOOTER
+    ====================== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #d1e5f3;
+      margin-top: 50px;
+    }
+
+    /* =====================
+       RESPONSIVE
+    ====================== */
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }

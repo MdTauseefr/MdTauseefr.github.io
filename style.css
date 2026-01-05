@@ -2,7 +2,7 @@
        GLOBAL STYLES
     ====================== */
     * {
-      margin: 0;
+      margin: 10px;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;

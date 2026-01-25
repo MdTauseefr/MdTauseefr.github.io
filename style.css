@@ -308,3 +308,20 @@
 .social-links a:last-child:hover {
   background: #000; /* X (Twitter) black */
 }
+.hero-text1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text1 span {
+  color: #38bdf8;
+  border-right: 3px solid #38bdf8;
+  padding-right: 6px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #38bdf8; }
+  100% { border-color: transparent; }
+}
